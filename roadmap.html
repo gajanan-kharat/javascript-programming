@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>React MERN Stack Roadmap</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      font-family: Arial, sans-serif;
+      color: white;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      margin-bottom: 40px;
+    }
+
+    .roadmap {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      position: relative;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .box {
+      background-color: transparent;
+      border: 2px solid white;
+      border-style: dashed;
+      border-radius: 15px;
+      padding: 20px;
+      width: 250px;
+      box-sizing: border-box;
+      position: relative;
+      margin-bottom: 40px;
+    }
+
+    .box.frontend .title {
+      background-color: #00e676;
+      color: #000;
+    }
+
+    .box.backend .title,
+    .box.addons .title {
+      background-color: #9c27b0;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 10px;
+    }
+
+    ul li {
+      margin-bottom: 8px;
+      border-left: 2px dotted white;
+      padding-left: 10px;
+    }
+
+    .center-box {
+      text-align: center;
+      border: 2px solid white;
+      padding: 20px;
+      border-radius: 10px;
+      font-weight: bold;
+      background-color: #333;
+      margin: 0 10px;
+    }
+
+    /* Arrows */
+    .arrow {
+      width: 50px;
+      height: 2px;
+      background: white;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .arrow::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: -5px;
+      width: 0;
+      height: 0;
+      border-top: 7px solid transparent;
+      border-bottom: 7px solid transparent;
+      border-left: 10px solid white;
+    }
+
+    .arrow.left {
+      left: 265px;
+    }
+
+    .arrow.right {
+      right: 265px;
+    }
+
+    @media (max-width: 900px) {
+      .roadmap {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .arrow {
+        display: none;
+      }
+
+      .box {
+        width: 90%;
+      }
+
+      .center-box {
+        margin: 20px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>REACT MERN STACK Training Roadmap</h1>
+
+  <div class="roadmap">
+
+    <div class="box frontend">
+      <div class="title">Frontend</div>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Bootstrap</li>
+        <li>React</li>
+        <li>Redux</li>
+      </ul>
+    </div>
+
+    <!-- Arrow to center -->
+    <div class="arrow left"></div>
+
+    <div class="center-box">
+      REACT<br/>MERN<br/>STACK
+    </div>
+
+    <!-- Arrow to backend -->
+    <div class="arrow right"></div>
+
+    <div class="box backend">
+      <div class="title">Backend</div>
+      <ul>
+        <li>Mongo DB</li>
+        <li>Node Js</li>
+        <li>Express Js</li>
+      </ul>
+    </div>
+
+    <div class="box addons">
+      <div class="title">ADD ONS</div>
+      <ul>
+        <li>Go live Project</li>
+        <li>Agile and JIRA</li>
+        <li>Git - SCM Tool</li>
+        <li>Deployment - AWS</li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>
